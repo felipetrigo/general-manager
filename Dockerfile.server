@@ -1,0 +1,5 @@
+FROM openjdk:17
+WORKDIR /general-manager
+ADD target/general-manager-0.0.1.jar general-manager-0.0.1.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar","general-manager-0.0.1.jar"]
